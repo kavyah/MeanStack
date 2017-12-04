@@ -1,0 +1,79 @@
+<h1 class="page-header">  Welcome </h1>
+<body>
+  <section class="b1">
+    <div class="in1">
+      <div class="content">
+        <h1>
+          Social Academic Portal
+        </h1>
+      
+          <a *ngIf="!authService.loggedIn()" routerLink="/register" class="btn btn-info btn-lg">Register</a>
+          <a *ngIf="!authService.loggedIn()" routerLink="/login" class="btn btn-info btn-lg">Login</a>
+          <a *ngIf="authService.loggedIn()" routerLink="/profile" class="btn btn-info btn-lg">Profile</a>
+
+
+</div>
+    </div>   
+  </section>
+
+
+
+  <section id="sec-pricing" class="sec-pricing">
+    <div class="container">
+      <h1 class="h4 mb-6 text-center">What do you want to do ?</h1>
+
+      <div class="row justify-content-center">
+        <div class="col-md-5" style="background-color:cyan">
+          <div class="card text-center">
+            <div class="card-block">
+              <h4 class="card-title h5">Rate a Professor</h4>
+              <p class="card-text">
+                Rate your Professors and the Courses they have taken .
+              </p>
+              <a *ngIf="authService.loggedIn()"  routerLink="/addReview" class="btn btn-primary">Find out more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5" style="background-color:rosybrown">
+          <div class="card text-center">
+            <div class="card-block">
+              <h4 class="card-title h5">View Professor Ratings</h4>
+              <p class="card-text">
+                Know more about your Professors from your classmates
+              </p>
+
+              <a *ngIf="authService.loggedIn()" href="#" class="btn btn-primary">Find out more</a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-md-5" style="background-color:cadetblue">
+          <div class="card text-center">
+            <div class="card-block justify-content-center">
+              <h4 class="card-title h5">Professor and Course Statistics</h4>
+
+              <p class="card-text">
+                View Statistics on the add rate and drop rate of your professors and thier classes
+              </p>
+              <a *ngIf="authService.loggedIn()"  href="#" class="btn btn-primary">Find out more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md- 5 p" style="background-color:coral">
+          <div class="card text-center">
+            <div class="card-block justify-content-center">
+              <h4 class="card-title h5">Student Posts</h4>
+
+              <p class="card-text">
+                Get information and know what the students are taking about .
+              </p>
+              <a *ngIf="authService.loggedIn()"  href="#" class="btn btn-primary">Find out more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

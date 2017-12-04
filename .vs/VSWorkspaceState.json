@@ -2,9 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\client",
+    "\\client\\e2e",
+    "\\client\\src",
     "\\client\\src\\app",
-    "\\config"
+    "\\client\\src\\app\\components",
+    "\\client\\src\\app\\components\\blog",
+    "\\client\\src\\app\\components\\home",
+    "\\client\\src\\app\\components\\register",
+    "\\client\\src\\app\\guards",
+    "\\routes"
   ],
-  "SelectedNode": "\\client",
+  "SelectedNode": "\\routes\\blogs.js",
   "PreviewInSolutionExplorer": false
 }
